@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.bundle.css">
+</head>
+<body>
+  <div class="wrapper">
+    <%= _.template(require('./../includes/header.html'))(data) %> 
+    <section class="content">
+      <div class="content__wrapper">
+        <div class="container">
+          <h1 class="content__title">
+              Пройдите тест за <span class="content__number">1</span>  минуту
+              и узнайте стоимость вашего окна ПВХ
+              прямо сейчас!
+          </h1>
+          <div class="advantages">
+            <div class="advantages__wrapper">
+              <div class="advantages__row">
+                <div class="advantages__item">
+                  <div class="advantages__icon">
+                    <img src="./img/adv-1.png" alt="">
+                  </div>
+                  <div class="advantages__name">
+                    <span>Рассрочка до 12
+                        месяцев без переплат</span>
+                  </div>
+                </div>
+                <div class="advantages__item">
+                  <div class="advantages__icon">
+                    <img src="./img/adv-2.svg" alt="">
+                  </div>
+                  <div class="advantages__name">
+                    <span>Бесплатный замер и доставка</span>
+                  </div>
+                </div>
+                <div class="advantages__item">
+                  <div class="advantages__icon">
+                    <img src="./img/adv-3.svg" alt="">
+                  </div>
+                  <div class="advantages__name">
+                    <span>Рассрочка до 12
+                        месяцев без переплат</span>
+                  </div>
+                </div>
+                <div class="advantages__item">
+                  <div class="advantages__icon">
+                    <img src="./img/adv-4.svg" alt="">
+                  </div>
+                  <div class="advantages__name">
+                    <span>Рассрочка до 12
+                        месяцев без переплат</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%= _.template(require('./../includes/carousel.html'))(data) %>
+    <%= _.template(require('./../includes/footer.html'))(data) %>
+    <%= _.template(require('./../includes/popups.html'))(data) %>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/bundle.js"></script>
+</body>
+</html>

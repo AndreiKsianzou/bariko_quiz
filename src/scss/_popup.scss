@@ -1,0 +1,7 @@
+.popup {
+  &__wrapper {
+    &_open {
+      display: flex;
+    }
+  }
+}
